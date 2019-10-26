@@ -1,0 +1,20 @@
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<h1>clothing line review system</h1>
+</br>
+<form action = "{{ url_for('function') }}" method = "POST">
+
+  <div class="form-group">
+      <label for="exampleFormControlTextarea1">Your Review</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" name="review" rows="3">{{text}}</textarea>
+      </br>
+      <input class="btn btn-primary" type="submit" value="Submit">
+  </div>
+        </br>
+        <h3>Result: </h3>
+        <p>{{msg}}</p>
+        <p>{{txt}}</p>
+
+</form>
+
+</html>
